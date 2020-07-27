@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Fave_Item"
+        android:title="favourite"/>
+    <item
+        android:id="@+id/nav_signOut"
+        android:title="signOut"/>
+
+    <item
+        android:id="@+id/nav_order"
+        android:title="your order"/>
+
+</menu>

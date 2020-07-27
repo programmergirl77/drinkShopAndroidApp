@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#AECEE7">
+
+    <LinearLayout
+        android:layout_margin="9dp"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/img_cart_product"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_cart_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="milk tea"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/txt_count"
+                    app:initialNumber="1"
+                    app:finalNumber="100"
+                    android:layout_width="50dp"
+                    android:layout_height="30dp"
+                    android:background="#000"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="9dp"
+        android:background="#fff"
+        android:hint="comment"
+        android:padding="5dp"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:lines="1"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="9dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="9dp">
+
+            <!-- group 1 size of cup-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="choose size"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="REQUIRED"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:textColor="#fff"
+                    android:background="#888B8D"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/rd_sizM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size M"/>
+
+                    <RadioButton
+                        android:id="@+id/rd_sizL"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Size L"/>
+
+
+                </RadioGroup>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+$0"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+$3"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- group sugar-->
+
+            <RelativeLayout
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="choose sugar"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="REQUIRED"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:textColor="#fff"
+                    android:background="#888B8D"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/rd_sugar100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100%"/>
+                    <RadioButton
+                        android:id="@+id/rd_sugar70"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="70%"/>
+
+                    <RadioButton
+                        android:id="@+id/rd_sugar50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50%"/>
+
+                    <RadioButton
+                        android:id="@+id/rd_sugar30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30%"/>
+                    <RadioButton
+                        android:id="@+id/rd_sugar_free"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="free"/>
+
+
+                </RadioGroup>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+$0"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+$3"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- group ice-->
+            <RelativeLayout
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="choose ice"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="REQUIRED"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:textColor="#fff"
+                    android:background="#888B8D"
+                    android:layout_alignParentRight="true"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/rd_ice100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100%"/>
+                    <RadioButton
+                        android:id="@+id/rd_ice70"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="70%"/>
+
+                    <RadioButton
+                        android:id="@+id/rd_ice50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50%"/>
+
+                    <RadioButton
+                        android:id="@+id/rd_ice30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30%"/>
+                    <RadioButton
+                        android:id="@+id/rd_ice_free"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="free"/>
+
+
+                </RadioGroup>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp"
+                    android:layout_alignParentRight="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+$0"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+$3"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <!-- group topping-->
+            <RelativeLayout
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="topping"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/topping_item_recycler"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

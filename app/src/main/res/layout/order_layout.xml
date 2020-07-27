@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="4dp"
+    app:cardElevation="4dp"
+    app:contentPadding="8dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_order_id"
+                android:text="#111"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/txt_order_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="$15"
+                android:padding="5dp"
+                android:textColor="#fff"
+                android:background="@drawable/text_round"
+                android:layout_weight="1"
+                android:layout_alignParentRight="true"
+                android:textSize="16sp"
+                />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/txt_order_address"
+            android:text="order address"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txt_order_comment"
+            android:text="order comment"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txt_order_status"
+            android:text="order status : processing"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
